@@ -1,11 +1,20 @@
+@import url('./assets/fonts/matteo/stylesheet.css');
+
+* {
+  --odysen-bg: #08091E;
+  --odysen-fg: #fff;
+  --odysen-subtext: #767676;
+  --odysen-accent: #1ED78D;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Matteo, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--odysen-fg);
+  background-color: var(--odysen-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +24,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--odysen-accent);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--odysen-accent);
 }
 
 body {
@@ -47,7 +56,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--odysen-accent);
 }
 button:focus,
 button:focus-visible {
@@ -67,8 +76,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--odysen-bg);
+    background-color: var(--odysen-fg);
   }
   a:hover {
     color: #747bff;
@@ -76,4 +85,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.bg-image {
+  background: url('./assets/logo.png');
 }
