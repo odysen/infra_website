@@ -4,8 +4,6 @@ import Aura from `@primevue/themes/aura`
 import './style.css'
 import App from './App.vue'
 
-
-
 const App = createApp(App);
 App.use(PrimeVue, {
     theme: {
