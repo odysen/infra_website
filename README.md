@@ -14,7 +14,7 @@
 <a href="https://odysen.space">📱 Visit this Project</a>
 </p>
  
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="tech">💻 Technologies</h2>
 
 - Vue.js
 - PrimeVue
@@ -43,6 +43,14 @@ For those who wish to contribute, including Odysen Developers:
 
 [💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
+<h2> 📝 License </h2>
+
+```
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+```
+
+Copy of the license can be found: <a href="https://github.com/odysen/infra_website/blob/main/LICENSE"> GPL-3.0 license</a>
 
 <hr>
 
