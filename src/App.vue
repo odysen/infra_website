@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <still-dev></still-dev>
+  <stillDev></stillDev>
 </template>
