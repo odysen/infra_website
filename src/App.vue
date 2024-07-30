@@ -1,7 +1,8 @@
 <script setup>
   import stillDev from './components/stillDev.vue'
+  import Button from 'primevue/button'
 </script>
 
 <template>
-  <stillDev></stillDev>
+  <Button>hi i got primevue to work</Button>
 </template>
