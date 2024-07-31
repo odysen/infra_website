@@ -34,8 +34,9 @@
 
 For those who wish to contribute, including Odysen Developers:
 
-1. Make a fork of the repository
-2. Once you are satisfied with your changes to the code, make a pull request and await approval for a merge.  
+1. Make a fork of the repository.
+2. **Switch to the `dev` branch**. Changes made to `main` will be **rejected**.
+2. Once you are satisfied with your changes to the code, make a pull request and await approval for a merge.
 
 <h3>Documentations that might help</h3>
 
