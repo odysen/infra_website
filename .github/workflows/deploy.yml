@@ -11,7 +11,7 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: build
-              run: docker build -t ${{ github.run_id }} .
+              run: docker build -t ${{ github.job }} .
     deploy:
         name: deploy
         runs-on: self-hosted
