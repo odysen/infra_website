@@ -1,7 +1,7 @@
 name: deploy production
 on:
-    #push:
-    #    branches: [ "main" ]
+    push:
+        branches: [ "main" ]
 
     workflow_dispatch:
 
@@ -24,13 +24,13 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: build
-              run: docker build -t ${{ github.job }} .
+              run: podman build -t ${{ github.job }} .
     deploy:
         needs: image
         name: deploy
         runs-on: self-hosted
         steps:
             - name: cleanup
-              run: docker rm -f image
+              run: podman rm -f image
             - name: run-image
-              run: docker run $PORT $ENV --name image -d image
+              run: podman run -p 3500:3500 $ENV --name image -d image
