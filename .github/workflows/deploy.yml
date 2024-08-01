@@ -19,6 +19,7 @@ jobs:
             - name: pull
               run: git pull --rebase
     image:
+        needs: pull
         name: image
         runs-on: self-hosted
         steps:
@@ -30,6 +31,6 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: cleanup
-              run: docker rm -f ${{ github.job }}
+              run: docker rm -f image
             - name: run-image
-              run: docker run $PORT $ENV --name ${{ github.job }} -d ${{ github.job }}
+              run: docker run $PORT $ENV --name image -d image
