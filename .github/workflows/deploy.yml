@@ -1,7 +1,7 @@
 name: deploy production
 on:
     push:
-        branches: [ "dev" ]
+        branches: [ "main" ]
 
     workflow_dispatch:
 
