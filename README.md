@@ -1,4 +1,4 @@
-![infra_website](https://socialify.git.ci/odysen/infra_website/image?description=1&descriptionEditable=The%20Odysen%20Production%20Website.&logo=https%3A%2F%2Fmedia.kerichuu.space%2Fr%2Fodysenresizesdaqaaaiqantcoffee%2520%255BCC4EC70%255D.png%3Fcompress%3Dfalse&name=1&owner=1&stargazers=1&theme=Dark)       
+![infra_website](https://socialify.git.ci/odysen/infra_website/image?description=1&font=Jost&language=1&description=1&logo=https%3A%2F%2Fmedia.kerichuu.space%2Fu%2Fsvg_squared.svg%3Fcompress%3Dfalse&name=1&owner=1&stargazers=1&theme=Dark)         
 
 <h1 align="center" style="font-weight: bold;">Odysen Website</h1>
 
