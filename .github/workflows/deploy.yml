@@ -12,6 +12,12 @@ defaults:
     
 
 jobs:
+    pull:
+        name: pull
+        runs-on: self-hosted
+        steps:
+            - name: pull
+              run: git pull --rebase
     image:
         name: image
         runs-on: self-hosted
