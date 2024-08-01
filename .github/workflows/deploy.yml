@@ -8,9 +8,16 @@ on:
 defaults:
     run:
         shell: bash
+        working-directory: infra_website
     
 
 jobs:
+    pull:
+        name: pull
+        runs-on: self-hosted
+        steps:
+            - name: pull
+              run: git pull --rebase
     image:
         name: image
         runs-on: self-hosted
