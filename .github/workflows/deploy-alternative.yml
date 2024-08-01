@@ -1,0 +1,27 @@
+name: Deploy to production (alternative)
+on:
+    push:
+        branches: [ "dev" ]
+
+defaults:
+    run:
+        shell: bash
+        working-directory: infra_website
+
+jobs:
+    pull:
+        name: Pull sources
+        runs-on: self-hosted
+        steps:
+            - name: pull
+              run: git pull --rebase
+        
+    deploy:
+        name: Deploy (npm)
+        runs-on: self-hosted
+        steps:
+            - name: Update dependencies
+              run: npm i
+            - name: Build
+              run: npm run build
+            
