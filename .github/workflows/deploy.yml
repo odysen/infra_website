@@ -31,6 +31,6 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: cleanup
-              run: podman rm -f image
+              run: podman rm -f localhost/image:latest
             - name: run-image
               run: podman run -p 3500:3500 $ENV --network=host --name image -d image
