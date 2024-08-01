@@ -15,4 +15,9 @@
 #    deploy:
 #        name: deploy
 #        runs-on: self-hosted
+#        steps:
+#            - name: cleanup
+#              run: docker rm -f ${{ github.job }}
+#            - name: run-image
+#              run: docker run $PORT $ENV --name ${{ github.job }} -d ${{ github.job }}
 # unfinished
