@@ -1,0 +1,4 @@
+:3500 {
+    root * /opt/site
+    file_server
+}

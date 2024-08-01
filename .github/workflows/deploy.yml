@@ -1,0 +1,28 @@
+name: deploy production
+on:
+    push:
+        branches: [ "main" ]
+
+    workflow_dispatch:
+
+defaults:
+    run:
+        shell: bash
+    
+
+jobs:
+    image:
+        name: image
+        runs-on: self-hosted
+        steps:
+            - name: build
+              run: docker build -t ${{ github.job }} .
+    deploy:
+        needs: image
+        name: deploy
+        runs-on: self-hosted
+        steps:
+            - name: cleanup
+              run: docker rm -f ${{ github.job }}
+            - name: run-image
+              run: docker run $PORT $ENV --name ${{ github.job }} -d ${{ github.job }}
