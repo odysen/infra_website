@@ -33,4 +33,4 @@ jobs:
             - name: cleanup
               run: podman rm -f image
             - name: run-image
-              run: podman run -p 3500:3500 $ENV --name image -d image
+              run: podman run -p 3500:3500 $ENV --network bridge --name image -d image
