@@ -1,18 +1,18 @@
-name: deploy production
+#name: deploy production
 #on:
 #    push:
 #        branches: [ "main" ]
 
-    workflow_dispatch:
+#    workflow_dispatch:
 
-jobs:
-    image:
-        name: image
-        runs-on: self-hosted
-        steps:
-            - name: build
-              run: docker build -t ${{ github.job }} .
-    deploy:
-        name: deploy
-        runs-on: self-hosted
+#jobs:
+#    image:
+#        name: image
+#        runs-on: self-hosted
+#        steps:
+#            - name: build
+#              run: docker build -t ${{ github.job }} .
+#    deploy:
+#        name: deploy
+#        runs-on: self-hosted
 # unfinished
