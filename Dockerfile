@@ -1,4 +1,4 @@
-FROM node:22-bookworm AS BUILD
+FROM node:22-bookworm AS build
 ENV NODE_ENV="development"
 WORKDIR /app
 COPY package.json package.json
