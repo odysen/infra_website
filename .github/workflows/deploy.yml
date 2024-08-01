@@ -18,6 +18,7 @@ jobs:
             - name: build
               run: docker build -t ${{ github.job }} .
     deploy:
+        needs: image
         name: deploy
         runs-on: self-hosted
         steps:
