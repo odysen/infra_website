@@ -1,7 +1,7 @@
 name: deploy production
 on:
-    push:
-        branches: [ "main" ]
+    #push:
+    #    branches: [ "main" ]
 
     workflow_dispatch:
 
@@ -33,4 +33,4 @@ jobs:
         runs-on: self-hosted
         steps:
             - name: run-image
-              run: podman run -p 3500:3500 $ENV --network=host --name image -d image
+              run: podman run -p 3500:3500 $ENV --name image -d image
