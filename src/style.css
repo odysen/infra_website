@@ -1,10 +1,10 @@
 @import url('./assets/fonts/matteo/stylesheet.css');
 
 * {
-  --odysen-bg: #08091E;
-  --odysen-fg: #fff;
+  --odysen-space: #08091E;
+  --odysen-flashbang: #fff;
   --odysen-subtext: #767676;
-  --odysen-accent: #1ED78D;
+  --odysen-mint: #1ED78D;
 }
 
 :root {
@@ -13,8 +13,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--odysen-fg);
-  background-color: var(--odysen-bg);
+  color: var(--odysen-flashbang);
+  background-color: var(--odysen-space);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +24,11 @@
 
 a {
   font-weight: 500;
-  color: var(--odysen-accent);
+  color: var(--odysen-mint);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--odysen-accent);
+  color: var(--odysen-mint);
 }
 
 body {
@@ -56,7 +56,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--odysen-accent);
+  border-color: var(--odysen-mint);
 }
 button:focus,
 button:focus-visible {
@@ -83,8 +83,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--odysen-bg);
-    background-color: var(--odysen-fg);
+    color: var(--odysen-space);
+    background-color: var(--odysen-flashbang);
   }
   a:hover {
     color: #747bff;
