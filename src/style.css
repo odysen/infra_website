@@ -84,7 +84,7 @@ button:focus-visible {
 .bg-image {
   background: url('./assets/logo.png');
 }
-
+/* honestly? overriding colors like this is an awful practice, but man, looks like we dont have a choice - building presets is stupidly complicated */
 .p-button-secondary {
   background-color: rgba(30, 215, 141, 0.1) !important;
   border: 1px solid rgba(30, 215, 141, 0.1) !important;
