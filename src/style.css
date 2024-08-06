@@ -86,15 +86,16 @@ button:focus-visible {
 }
 /* honestly? overriding colors like this is an awful practice, but man, looks like we dont have a choice - building presets is stupidly complicated */
 .p-button-secondary {
-  background-color: rgba(30, 215, 141, 0.1) !important;
-  border: 1px solid rgba(30, 215, 141, 0.1) !important;
-  color: #1ED78D !important;
+  /*background-color: rgba(30, 215, 141, 0.1) !important; - note to janlu - you can use color mix instead of having to redefine the colors in srgb */
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  color: var(--odysen-mint) !important;
 }
 .p-button-secondary:hover {
-  background-color: rgba(30, 215, 141, 0.2) !important;
-  border: 1px solid rgba(30, 215, 141, 0.2) !important;
+  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
 }
 .p-button-secondary:active {
-  background-color: rgba(30, 215, 141, 0.3) !important;
-  border: 1px solid rgba(30, 215, 141, 0.3) !important;
+  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
 }
