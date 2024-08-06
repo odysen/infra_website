@@ -44,25 +44,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: var(--odysen-mint);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 .card {
   padding: 2em;
 }
@@ -84,6 +65,7 @@ button:focus-visible {
 .bg-image {
   background: url('./assets/logo.png');
 }
+
 /* honestly? overriding colors like this is an awful practice, but man, looks like we dont have a choice - building presets is stupidly complicated */
 .p-button-secondary {
   /*background-color: rgba(30, 215, 141, 0.1) !important; - note to janlu - you can use color mix instead of having to redefine the colors in srgb */
