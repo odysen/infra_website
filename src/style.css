@@ -101,3 +101,35 @@ h1 {
   background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
   border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
 }
+
+/* MENUBAR */
+.p-menubar {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+}
+
+/* SEARCH BAR */
+.p-inputtext {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  color: var(--odysen-flashbang) !important;
+}
+
+.p-inputtext:hover {
+  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+}
+
+.p-inputtext:focus {
+  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+}
+
+/* FLOATIE BAR */
+.floatie {
+  position: fixed;
+  right: 50;
+  top: 1rem;
+  width: 80%;
+  z-index: 1;
+}
