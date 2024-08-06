@@ -1,10 +1,10 @@
 @import url('./assets/fonts/matteo/stylesheet.css');
 
 * {
-  --odysen-bg: #08091E;
-  --odysen-fg: #fff;
+  --odysen-space: #08091E;
+  --odysen-flashbang: #fff;
   --odysen-subtext: #767676;
-  --odysen-accent: #1ED78D;
+  --odysen-mint: #1ED78D;
 }
 
 :root {
@@ -12,9 +12,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: var(--odysen-fg);
-  background-color: var(--odysen-bg);
+  color-scheme: dark;
+  color: var(--odysen-flashbang);
+  background-color: var(--odysen-space);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +24,11 @@
 
 a {
   font-weight: 500;
-  color: var(--odysen-accent);
+  color: var(--odysen-mint);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--odysen-accent);
+  color: var(--odysen-mint);
 }
 
 body {
@@ -42,25 +42,6 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: var(--odysen-accent);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .card {
@@ -81,33 +62,94 @@ button:focus-visible {
   place-content: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--odysen-bg);
-    background-color: var(--odysen-fg);
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 .bg-image {
   background: url('./assets/logo.png');
 }
 
+/* BUTTONS - PRIMARY */
+.p-button {
+  background-color: var(--odysen-mint) !important;
+  border: 1px solid var(--odysen-mint) !important;
+  color: var(--odysen-space) !important;
+}
+
+.p-button:hover {
+  background-color: color-mix(in srgb, var(--odysen-mint) 70%, var(--odysen-space)) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 70%, var(--odysen-space)) !important;
+}
+
+.p-button:active {
+  background-color: color-mix(in srgb, var(--odysen-mint) 50%, var(--odysen-space)) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 50%, var(--odysen-space)) !important;
+}
+
+/* BUTTONS - SECONDARY */
+/* honestly? overriding colors like this is an awful practice, but man, looks like we dont have a choice - building presets is stupidly complicated */
 .p-button-secondary {
-  background-color: rgba(30, 215, 141, 0.1) !important;
-  border: 1px solid rgba(30, 215, 141, 0.1) !important;
-  color: #1ED78D !important;
+  /*background-color: rgba(30, 215, 141, 0.1) !important; - note to janlu - you can use color mix instead of having to redefine the colors in srgb */
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  color: var(--odysen-mint) !important;
 }
+
 .p-button-secondary:hover {
-  background-color: rgba(30, 215, 141, 0.2) !important;
-  border: 1px solid rgba(30, 215, 141, 0.2) !important;
+  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
 }
+
 .p-button-secondary:active {
-  background-color: rgba(30, 215, 141, 0.3) !important;
-  border: 1px solid rgba(30, 215, 141, 0.3) !important;
+  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
 }
+
+/* MENUBAR */
+.p-menubar {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+}
+
+.p-menubar-submenu {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  margin-top: 1rem !important;
+}
+
+.p-menubar-item-content:hover {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+}
+
+.p-menubar-item.p-focus > .p-menubar-item-content {
+  background: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+}
+
+.p-menubar-item-active > .p-menubar-item-content {
+  background: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+}
+
+/* SEARCH BAR */
+.p-inputtext {
+  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
+  color: var(--odysen-flashbang) !important;
+}
+
+.p-inputtext:hover {
+  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
+}
+
+.p-inputtext:focus {
+  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
+}
+
+/* FLOATIE BAR */
+.floatie {
+  position: fixed;
+  right: 50;
+  top: 1rem;
+  width: 80%;
+  z-index: 1;
+}
+
+/* TODO: we should probably try defining the 10, 20, 30 variants as variables because color mixing that much can be a perf hit and messy code :shrug:, we can even hardcode it maybe? */
