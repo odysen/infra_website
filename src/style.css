@@ -66,83 +66,6 @@ h1 {
   background: url('./assets/logo.png');
 }
 
-/* BUTTONS - PRIMARY */
-.p-button {
-  background-color: var(--odysen-mint) !important;
-  border: 1px solid var(--odysen-mint) !important;
-  color: var(--odysen-space) !important;
-}
-
-.p-button:hover {
-  background-color: color-mix(in srgb, var(--odysen-mint) 70%, var(--odysen-space)) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 70%, var(--odysen-space)) !important;
-}
-
-.p-button:active {
-  background-color: color-mix(in srgb, var(--odysen-mint) 50%, var(--odysen-space)) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 50%, var(--odysen-space)) !important;
-}
-
-/* BUTTONS - SECONDARY */
-/* honestly? overriding colors like this is an awful practice, but man, looks like we dont have a choice - building presets is stupidly complicated */
-.p-button-secondary {
-  /*background-color: rgba(30, 215, 141, 0.1) !important; - note to janlu - you can use color mix instead of having to redefine the colors in srgb */
-  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  color: var(--odysen-mint) !important;
-}
-
-.p-button-secondary:hover {
-  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
-}
-
-.p-button-secondary:active {
-  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
-}
-
-/* MENUBAR */
-.p-menubar {
-  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-}
-
-.p-menubar-submenu {
-  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  margin-top: 1rem !important;
-}
-
-.p-menubar-item-content:hover {
-  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-}
-
-.p-menubar-item.p-focus > .p-menubar-item-content {
-  background: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-}
-
-.p-menubar-item-active > .p-menubar-item-content {
-  background: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-}
-
-/* SEARCH BAR */
-.p-inputtext {
-  background-color: color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 10%, transparent) !important;
-  color: var(--odysen-flashbang) !important;
-}
-
-.p-inputtext:hover {
-  background-color: color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 20%, transparent) !important;
-}
-
-.p-inputtext:focus {
-  background-color: color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
-  border: 1px solid color-mix(in srgb, var(--odysen-mint) 30%, transparent) !important;
-}
-
 /* FLOATIE BAR */
 .floatie {
   position: fixed;
@@ -150,6 +73,10 @@ h1 {
   top: 1rem;
   width: 80%;
   z-index: 1;
+
+  .p-menubar-submenu {
+    margin-top: 1rem;
+  }
 }
 
 /* TODO: we should probably try defining the 10, 20, 30 variants as variables because color mixing that much can be a perf hit and messy code :shrug:, we can even hardcode it maybe? */
