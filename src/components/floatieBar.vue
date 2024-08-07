@@ -1,7 +1,6 @@
 <script setup>
     import Menubar from 'primevue/menubar';
     import InputText from 'primevue/inputtext';
-    import Avatar from 'primevue/avatar';
     import '@mdi/font/css/materialdesignicons.css';
     import { ref } from "vue";
 
@@ -40,7 +39,7 @@
 </script>
 
 <template>
-<div class="floatie">
+    <div class="floatie">
         <Menubar :model="items">
             <template #start>
                 <svg width="45" height="35" viewBox="0 0 220 300" fill="none" xmlns="http://www.w3.org/2000/svg">
