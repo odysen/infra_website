@@ -79,6 +79,19 @@ const odysenUI = definePreset(Aura, {
                         border: {
                             color: '{primary.100}'
                         }
+                    },
+                    mobile: {
+                        button: {
+                            color: '{flashbang.100}',
+                            hover: {
+                                background: '{primary.200}',
+                                color: '{flashbang.100}'
+                            },
+                            active: {
+                                background: '{primary.200}',
+                                color: '{flashbang.100}'
+                            }
+                        }
                     }
                 }
             } 

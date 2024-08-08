@@ -77,6 +77,12 @@ h1 {
   .p-menubar-submenu {
     margin-top: 1rem;
   }
+
+  .p-menubar-mobile-active .p-menubar-root-list {
+    margin-top: 0.5rem;
+    border-radius: inherit;
+  }
 }
+
 
 /* TODO: we should probably try defining the 10, 20, 30 variants as variables because color mixing that much can be a perf hit and messy code :shrug:, we can even hardcode it maybe? */
