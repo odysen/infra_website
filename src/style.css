@@ -7,6 +7,10 @@
   --odysen-mint: #1ED78D;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-family: Matteo, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
