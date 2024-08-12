@@ -6,7 +6,7 @@ import Button from 'primevue/button'
 <template>
     <a href="/" class="patreonCard">
             <div class="patreonCard__logo-container">
-                <img width="300" src="../assets/patreonLogo.png" alt="Patreon Logo">
+                <img width="150" src="../assets/patreonLogo.svg" alt="Patreon Logo">
             </div>
             <h2 class="patreonCard__title">Support us on Patreon</h2>
         <div class="patreonCard__button-container">
