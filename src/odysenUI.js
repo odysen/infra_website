@@ -12,7 +12,8 @@ const odysenUI = definePreset(Aura, {
         mint: { 50: '#112922', 100: '#134131', 200: '#17553f', 300: '#187654', 400: '#1aa170', 500: '#1ccc8d', 600: '#1deda2', 700: '#41e3a2', 800: '#6bf3b8', 900: '#95f8c9' },
         space: { 50: '#0f0f0f', 100: '#111111', 200: '#101117', 300: '#0f0f19', 400: '#0c0d1b', 500: '#0a0b1d', 600: '#08091e', 700: '#131529', 800: '#202336', 900: '#333544' },
         spacemint: { 100: '#121f2a', 200: '#28343e', 300: '#404a54', 400: '#58616a', 500: '#727981', 600: '#8d9399' },
-        flashbang: { 100: '#fff' }
+        flashbang: { 100: '#fff' },
+        noir: { 100: '#020202' }
     },
     semantic: {
         primary: {
@@ -101,14 +102,14 @@ const odysenUI = definePreset(Aura, {
                 dark: {
                     primary: {
                         background: '{primary.600}',
-                        color: '{space.600}',
+                        color: '{noir.100}',
                         hover: {
                             background: '{primary.800}',
-                            color: '{space.600}'
+                            color: '{noir.100}'
                         },
                         active: {
                             background: '{primary.400}',
-                            color: '{space.600}'
+                            color: '{noir.100}'
                         }
                     },
                     secondary: {

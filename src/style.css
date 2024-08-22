@@ -2,6 +2,7 @@
 
 * {
   --odysen-space: #08091E;
+  --odysen-noir: #020202;
   --odysen-flashbang: #fff;
   --odysen-subtext: #767676;
   --odysen-mint: #1ED78D;
@@ -18,7 +19,7 @@ html {
 
   color-scheme: dark;
   color: var(--odysen-flashbang);
-  background-color: var(--odysen-space);
+  background-color: var(--odysen-noir);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
