@@ -10,7 +10,7 @@ import wikiCard from './wikiCard.vue'
 <template>
   <floatieBar></floatieBar>
   <div class="homepageSection">
-    <h1 style="font-size: 4rem">Breaking <span style="color: var(--odysen-mint)">the rules</span> of Android.</h1>
+    <h1 style="font-size: 4rem">Breaking <span class="homepageHighlight">the rules</span> of normality.</h1>
     <div style="display: flex; gap: 1rem; justify-content: center;" id="cover">
       <Button as="a" label="Discover Odysen" href="#discover" severity="secondary" />
       <Button label="Watch the trailer" />

@@ -110,5 +110,9 @@ h1 {
   grid-auto-rows: 1fr
 }
 
+.homepageHighlight {
+  color: var(--odysen-mint);
+  text-shadow: 0 0 10px var(--odysen-mint), 0 0 100px var(--odysen-mint);
+}
 
 /* TODO: we should probably try defining the 10, 20, 30 variants as variables because color mixing that much can be a perf hit and messy code :shrug:, we can even hardcode it maybe? */
