@@ -20,35 +20,7 @@ import wikiCard from './wikiCard.vue'
     <p id="discover"><br><br><br></p>
     <! -- this br stuff is CRAZY but eh, we'll figure it out -->
       <h1> What is all this about? </h1>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> This text is all here to test scrolling capabilities :3 </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
-      <p> Odysen is a blah-blah-blah. Copyrighing later, we're doing development here. I wonder if primevue has anything
-        for text stuff? </p>
+
   </div>
 
   <section class="cards-section">
